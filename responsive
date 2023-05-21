@@ -1,0 +1,67 @@
+
+Media queries? 
+là những chuỗi truy vấn tạo những vùng riêng biệt 
+để css cho từng thiết bị PC máy tính bảng điện thoại 
+là kỹ thuật giúp web hiển thị tương thích nhiều kích thước màn hình khác nhau 
+
+ Viewport?
+thẻ meta có tên là Viewport có nghĩa là khung nhìn 
+
+@media not|only mediatype and (mediafeature and|or|not mediafeature) {
+CSS-Code;
+}
+
+Media query ?
+Keywords: 
+- not 
+- only 
+- and 
+- or 
+mediatypes:
+- print 
+- screen 
+- speech 
+- all-default 
+Media Features 
+- min width 
+- max width 
+https://en.wikipedia.org/wiki/Conditional_comment
+
+  
+Breakpoints ?
+là những điểm/ vị trí mà bố cục web sẽ thay đổi - thích ứng để tạo nên giao diện responsive 
+(https://ui.dev/rwd/develop/browser-feature-support/media-queries-for-common-device-breakpoints)
+dùng đon vị em ko dùng px trong media query
+mobile : width <740 px or <46.25em
+@media only screen and (max-width:739px or 46.1875em){
+    .mobile{
+        display : block ;
+    }
+}
+
+tablet : width >=740px(46.25em) and width<1024px(64em) 
+@media only screen and (min-width:740px(46.25em)) and (max-width:1039px(63.9375em)){
+    .tablet{
+        display : block ;
+    }
+}
+
+pc     : width >=1024px(64em) 
+@media only screen and (min-width:1024px(64em)){
+    .pc{
+        display : block ;
+    }
+}
+
+tablet
+@media only screen (min-width:46.25em) and (max-width:63.9375em) {
+    .tabet{
+        display:block;
+    }
+}
+mobile
+@media only screen (max-width:46.1875em){
+    .mobile {
+        display:block;
+    }
+}
